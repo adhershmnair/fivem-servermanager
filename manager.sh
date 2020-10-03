@@ -10,7 +10,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
 
 
-OPTION=$(whiptail --title "Slluxx Server manager" --menu "Choose your option" 15 60 5 \
+OPTION=$(whiptail --title "MORP Server manager" --menu "Choose your option" 15 60 5 \
 "1" "Manage existing servers" \
 "2" "Add server" \
 "3" "Delete server" \
@@ -207,8 +207,8 @@ fi
 
 if [[ $updatemanager == "true" ]]; then
 
-managerurl="https://raw.githubusercontent.com/Slluxx/fivem-servermanager/master/manager.sh"
-configurl="https://raw.githubusercontent.com/Slluxx/fivem-servermanager/master/managerfiles/default-config.cfg"
+managerurl="https://raw.githubusercontent.com/adhershmnair/fivem-servermanager/master/manager.sh"
+configurl="https://raw.githubusercontent.com/adhershmnair/fivem-servermanager/master/managerfiles/default-config.cfg"
 
 rm ./manager.sh
 wget $managerurl
